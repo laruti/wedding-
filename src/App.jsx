@@ -58,9 +58,9 @@ const App = () => {
 
 
       <div className='led pt-4 pb-4'>
-        <div className='text-center ml-8 mr-8'>
+        <div className='text-center ml-4 mr-4'>
           <h1 className=' text-pink-500 khmer-regular'>សិរីសួស្តីមង្គលអាពាហ៍ពិពាហ៍</h1>
-          <p className='mt-4 qwitcher-grypen-bold text-black'>យើងខ្ញុំមានកិត្តិយសសូមគោរពអញ្ជើញ</p>
+          <p className='mt-4  text-black'>យើងខ្ញុំមានកិត្តិយសសូមគោរពអញ្ជើញ</p>
           <p className='mt-4'>
             ឯកឧត្តម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា និងប្រិយមិត្ត
             អញ្ជើញចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធិពរជ័យ
@@ -82,7 +82,7 @@ const App = () => {
           </div>
         </div>
 
-        <p className='text-center ml-8 mr-8 '>
+        <p className='text-center ml-4 mr-4 '>
           និង ពិសាភោជនាហារ ដែលនឹងប្រព្រឹត្ត ទៅនៅ<br />
           ថ្ងៃទី<span>{couple.date.day}</span> ខែ{couple.date.month} ឆ្នាំ{couple.date.year} <br/>
           ត្រូវនឹងថ្ងៃព្រហស្បតិ៍ ១០ កើត ខែចេត្រ ឆ្នាំរោង
@@ -98,19 +98,19 @@ const App = () => {
         <div className='text-center'>
           <h1 className='text-pink-500'>កម្រងរូបភាពអនុស្សាវរីយ៍</h1>
           <p>រូបភាពសម្រាប់រំលឹក និងជាចំណងអាពាហ៍ពិពាហ៍ដ៏រឹងមាំ ហើយមានសុភមង្គល សម្រាប់យើងទាំងពីរនាក់។</p>
-          <div class="grid grid-cols-3 gap-1 rounded-md m-4">
+          <div class="grid grid-cols-3 gap-1  m-4">
   
-    <div class="col-span-1  border rounded-md"><img src={pr4} alt="" /></div>
-    <div class="col-span-2 p-4 border rounded-md"><img src={pr1} alt="" /></div>
+    <div class="col-span-1  border rounded-xl "><img src={pr4} alt="" className='rounded-xl '/></div>
+    <div class="col-span-2 p-4 border rounded-xl"><img src={pr1} alt="" className='rounded-xl'/></div>
 
 
-    <div class="col-span-1  border rounded-md"><img src={pr2} alt="" /></div>
-    <div class="col-span-1 border rounded-md"><img src={pr1} alt="" /></div>
-    <div class="col-span-1  border rounded-md"><img src={pr2} alt="" /></div>
+    <div class="col-span-1  border rounded-xl"><img src={pr2} alt="" className='rounded-xl'/></div>
+    <div class="col-span-1 border rounded-xl"><img src={pr1} alt="" className='rounded-xl'/></div>
+    <div class="col-span-1  border rounded-xl"><img src={pr2} alt="" className='rounded-xl'/></div>
 
  
-    <div class="col-span-1 p-4 border"><img src={pr4} alt="" /></div>
-    <div class="col-span-2 p-4 border"><img src={pr1} alt="" /> </div> 
+    <div class="col-span-1  border rounded-xl"><img src={pr4} alt="" className='rounded-xl'/></div>
+    <div class="col-span-2  border rounded-xl"><img src={pr1} alt="" className='rounded-xl'/> </div> 
 </div>
         </div>
       </div>
@@ -136,9 +136,8 @@ const App = () => {
       </div>
 
       <div className='flex flex-row gap-4 items-center border-2 m-4 rounded-md p-4'>
-        <div className='ml-2'><img src={qrcode} alt="" width={150} /></div>
+        <div className='ml-2'><img src={qrcode} alt="" width={100} /></div>
         <div>
-        
           <h1 className='text-pink-500'>HENG DOLLAR</h1>
           <div className='ml-8 font-bold'>978818522</div>
         </div>
