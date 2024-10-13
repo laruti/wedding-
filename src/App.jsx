@@ -1,0 +1,154 @@
+import React from 'react';
+import './App.css';
+import img from './assets/ktemjrouk.jpg';
+import heart from './assets/heart.png';
+import qrcode from './assets/qr.jpg'
+import imgFF from './assets/imgcrop.jpg';
+import imgMM from './assets/imgmen.jpg'
+import { Carousel } from 'antd';
+import ban from './assets/banner.png'
+import ban2 from './assets/ban2.jpg'
+import ban3 from './assets/time.jpg'
+import pr1 from './assets/pr1.jpg'
+import pr2 from './assets/pr2.jpg'
+import pr4 from './assets/pr4.jpeg'
+
+
+
+const App = () => {
+  const contentStyle = {
+    height: '160px',
+    color: '#fff',
+    lineHeight: '160px',
+    textAlign: 'center',
+    background: '#364d79',
+  };
+  const data = [
+    {
+      nameM: "ឃុន គីមស្រ៊ុន",
+      nameF: "សួស សុខហេង",
+      date: {
+        day: 2,
+        month: 3,
+        year: 2012,
+      },
+    },
+  ];
+
+  const couple = data[0]; // Accessing the first element
+
+  return (
+    <div>
+{/* navbar */}
+
+
+<Carousel autoplay>
+    <div>
+      <img src={ban} alt="" />
+    </div>
+    <div>
+    <img src={ban2} alt="" />
+    </div>
+    <div>
+    <img src={ban3} alt="" />
+
+    </div>
+   
+  </Carousel>
+
+
+
+
+      <div className='led pt-4 pb-4'>
+        <div className='text-center ml-8 mr-8'>
+          <h1 className=' text-pink-500 khmer-regular'>សិរីសួស្តីមង្គលអាពាហ៍ពិពាហ៍</h1>
+          <h2 className='mt-4 qwitcher-grypen-bold'>យើងខ្ញុំមានកិត្តិយសសូមគោរពអញ្ជើញ</h2>
+          <p className='mt-7'>
+            ឯកឧត្តម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា និងប្រិយមិត្ត
+            អញ្ជើញចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធិពរជ័យ
+            សិរីសួស្តីជ័យមង្គល ក្នុងពិធីរៀបអាពាហ៍ពិពាហ៍ របស់យើងខ្ញុំទាំងពីរ។
+          </p>
+        </div>
+
+        <div className='flex flex-col items-center mt-4'>
+          <div className='flex items-center gap-2'>
+            <h1>{couple.nameM}</h1>
+            <img src={imgMM}  className='rounded-full w-[120px] h-[120px] ' alt="Female" />
+          </div>
+          <div>
+            <img src={heart} alt="Heart" width={70} className='animate-bounce' />
+          </div>
+          <div className='flex items-center gap-2 mt-4'>
+            <img src={imgFF}  className='rounded-full w-[120px] h-[120px]' alt="Female" />
+            <h1>{couple.nameF}</h1>
+          </div>
+        </div>
+
+        <p className='text-center ml-8 mr-8'>
+          និង ពិសាភោជនាហារ ដែលនឹងប្រព្រឹត្ត ទៅនៅ
+          ថ្ងៃទី<span>{couple.date.day}</span> ខែ<span>{couple.date.month}</span> ឆ្នាំ<span>{couple.date.year}</span>
+          ត្រូវនឹងថ្ងៃព្រហស្បតិ៍ ១០ កើត ខែចេត្រ ឆ្នាំរោង
+          ឆស័ក ពុទ្ធសករាជ ២៥៦៧ វេលាម៉ោង ០៥:០០ នាទីល្ងាច
+          នៅគេហដ្ឋានខាងស្រីស្ថិតនៅភូមិព្រែកអំពិល
+          សង្កាត់ព្រែកអំពិល ក្រុងអរិយក្សត្រ ខេត្តកណ្ដាល
+          ដោយមេត្រីភាព។ សូមអរគុណ!
+        </p>
+      </div>
+
+      {/* Photos */}
+      <div className='mt-4'>
+        <div className='text-center'>
+          <h1 className='text-pink-500'>កម្រងរូបភាពអនុស្សាវរីយ៍</h1>
+          <p>រូបភាពសម្រាប់រំលឹក និងជាចំណងអាពាហ៍ពិពាហ៍ដ៏រឹងមាំ ហើយមានសុភមង្គល សម្រាប់យើងទាំងពីរនាក់។</p>
+          <div class="grid grid-cols-3 gap-1 rounded-md m-4">
+  
+    <div class="col-span-1  border rounded-md"><img src={pr4} alt="" /></div>
+    <div class="col-span-2 p-4 border rounded-md"><img src={pr1} alt="" /></div>
+
+
+    <div class="col-span-1  border rounded-md"><img src={pr2} alt="" /></div>
+    <div class="col-span-1 border rounded-md"><img src={pr1} alt="" /></div>
+    <div class="col-span-1  border rounded-md"><img src={pr2} alt="" /></div>
+
+ 
+    <div class="col-span-1 p-4 border"><img src={pr4} alt="" /></div>
+    <div class="col-span-2 p-4 border"><img src={pr1} alt="" /> </div> 
+</div>
+        </div>
+      </div>
+
+      {/* Location */}
+      <div>
+        <h1>ទីតាំងកម្មវិធី</h1>
+        <p>នៅគេហដ្ឋានខាងស្រីស្ថិតនៅភូមិព្រែកអំពិល សង្កាត់ព្រែកអំពិល ក្រុងអរិយក្សត្រ ខេត្តកណ្ដាល</p>
+      </div>
+      <div className='gap-4 items-center border-2 m-4 rounded-md'>
+        <iframe
+          title="Google Map"
+          width="100%"
+          height="200"
+          frameBorder="0"
+          scrolling="no"
+          marginHeight="0"
+          marginWidth="0"
+          src="https://maps.google.com/maps?width=100%25&height=200&hl=en&q=12%C2%B029'55.0%22N%20106%C2%B002'36.4%22E+(My%20Business%20Name)&t=&z=15&ie=UTF8&iwloc=B&output=embed"
+        >
+          <a href="https://www.gps.ie/">gps trackers</a>
+        </iframe>
+      </div>
+
+      <div className='flex flex-row gap-4 items-center border-2 m-4 rounded-md'>
+        <div className='ml-2'><img src={qrcode} alt="" width={150} /></div>
+        <div>
+        
+          <h1 className='text-pink-500'>HENG DOLLAR</h1>
+          <div className='ml-8 font-bold'>978818522</div>
+        </div>
+      </div>
+
+
+    </div>
+  );
+};
+
+export default App;

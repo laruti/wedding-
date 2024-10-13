@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.led{
+  background-color: rgb(246, 244, 235);
+}
+p{
+  color: gray;
+  margin-top: 1rem;
+  text-align: center;
+  margin-left:2rem;
+  margin-right: 2rem;
+  font-family: "Qwitcher Grypen", cursive;
+}
+h1{
+  text-align: center;
+  color: rgb(226, 111, 130);
+  margin-left:2rem;
+  margin-right: 2rem;
+  font-family: "Khmer", sans-serif;
+  font-size: larger;
+}
+body{
+  margin: 0;
+  height: 100vh;
+}
+@import url('https://fonts.googleapis.com/css2?family=Khmer&family=Qwitcher+Grypen:wght@400;700&display=swap');
+.khmer-regular {
+  font-family: "Khmer", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.qwitcher-grypen-regular {
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.qwitcher-grypen-bold {
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
