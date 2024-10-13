@@ -28,9 +28,9 @@ const App = () => {
       nameM: "ឃុន គីមស្រ៊ុន",
       nameF: "សួស សុខហេង",
       date: {
-        day: 2,
-        month: 3,
-        year: 2012,
+        day: "៥",
+        month: "១",
+        year:"២០២៣",
       },
     },
   ];
@@ -86,7 +86,7 @@ const App = () => {
 
         <p className='text-center ml-8 mr-8'>
           និង ពិសាភោជនាហារ ដែលនឹងប្រព្រឹត្ត ទៅនៅ
-          ថ្ងៃទី<span>{couple.date.day}</span> ខែ<span>{couple.date.month}</span> ឆ្នាំ<span>{couple.date.year}</span>
+          ថ្ងៃទី<span>{couple.date.day}</span> ខែ{couple.date.month} ឆ្នាំ{couple.date.year}
           ត្រូវនឹងថ្ងៃព្រហស្បតិ៍ ១០ កើត ខែចេត្រ ឆ្នាំរោង
           ឆស័ក ពុទ្ធសករាជ ២៥៦៧ វេលាម៉ោង ០៥:០០ នាទីល្ងាច
           នៅគេហដ្ឋានខាងស្រីស្ថិតនៅភូមិព្រែកអំពិល
@@ -120,7 +120,7 @@ const App = () => {
       {/* Location */}
       <div>
         <h1>ទីតាំងកម្មវិធី</h1>
-        <p>នៅគេហដ្ឋានខាងស្រីស្ថិតនៅភូមិព្រែកអំពិល សង្កាត់ព្រែកអំពិល ក្រុងអរិយក្សត្រ ខេត្តកណ្ដាល</p>
+        <p>នៅគេហដ្ឋានខាងស្រីស្ថិតនៅភូមិអូរឬស្សី២ សង្កាត់អូរឬស្សី ក្រុងក្រចេះ ខេត្តក្រចេះ</p>
       </div>
       <div className='gap-4 items-center border-2 m-4 rounded-md'>
         <iframe
@@ -137,14 +137,14 @@ const App = () => {
         </iframe>
       </div>
 
-      <div className='flex flex-row gap-4 items-center border-2 m-4 rounded-md'>
+      <div className='flex flex-row gap-4 items-center border-2 m-4 rounded-md p-4'>
         <div className='ml-2'><img src={qrcode} alt="" width={150} /></div>
         <div>
         
           <h1 className='text-pink-500'>HENG DOLLAR</h1>
           <div className='ml-8 font-bold'>978818522</div>
         </div>
-      </div>
+      </div >
 
 
     </div>
