@@ -47,13 +47,11 @@ const App = () => {
       <img src={ban} alt="" />
     </div>
     <div>
-    <img src={ban2} alt="" />
+    <img src={ban3} alt="" />
     </div>
     <div>
-    <img src={ban3} alt="" />
-
+    <img src={ban2} alt="" />
     </div>
-   
   </Carousel>
 
 
