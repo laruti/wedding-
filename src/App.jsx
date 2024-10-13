@@ -60,31 +60,31 @@ const App = () => {
       <div className='led pt-4 pb-4'>
         <div className='text-center ml-8 mr-8'>
           <h1 className=' text-pink-500 khmer-regular'>សិរីសួស្តីមង្គលអាពាហ៍ពិពាហ៍</h1>
-          <h2 className='mt-4 qwitcher-grypen-bold'>យើងខ្ញុំមានកិត្តិយសសូមគោរពអញ្ជើញ</h2>
-          <p className='mt-7'>
+          <p className='mt-4 qwitcher-grypen-bold text-black'>យើងខ្ញុំមានកិត្តិយសសូមគោរពអញ្ជើញ</p>
+          <p className='mt-4'>
             ឯកឧត្តម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា និងប្រិយមិត្ត
             អញ្ជើញចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធិពរជ័យ
             សិរីសួស្តីជ័យមង្គល ក្នុងពិធីរៀបអាពាហ៍ពិពាហ៍ របស់យើងខ្ញុំទាំងពីរ។
           </p>
         </div>
 
-        <div className='flex flex-col items-center mt-4'>
+        <div className='flex flex-col items-center mt-8'>
           <div className='flex items-center gap-2'>
             <h1>{couple.nameM}</h1>
-            <img src={imgMM}  className='rounded-full w-[120px] h-[120px] ' alt="Female" />
+            <img src={imgMM}  className='rounded-full w-[140px] h-[140px] ' alt="Female" />
           </div>
           <div>
-            <img src={heart} alt="Heart" width={70} className='animate-bounce' />
+            <img src={heart} alt="Heart" width={60} className='animate-bounce m-4' />
           </div>
           <div className='flex items-center gap-2 mt-4'>
-            <img src={imgFF}  className='rounded-full w-[120px] h-[120px]' alt="Female" />
+            <img src={imgFF}  className='rounded-full w-[140px] h-[140px]' alt="Female" />
             <h1>{couple.nameF}</h1>
           </div>
         </div>
 
-        <p className='text-center ml-8 mr-8'>
-          និង ពិសាភោជនាហារ ដែលនឹងប្រព្រឹត្ត ទៅនៅ
-          ថ្ងៃទី<span>{couple.date.day}</span> ខែ{couple.date.month} ឆ្នាំ{couple.date.year}
+        <p className='text-center ml-8 mr-8 '>
+          និង ពិសាភោជនាហារ ដែលនឹងប្រព្រឹត្ត ទៅនៅ<br />
+          ថ្ងៃទី<span>{couple.date.day}</span> ខែ{couple.date.month} ឆ្នាំ{couple.date.year} <br/>
           ត្រូវនឹងថ្ងៃព្រហស្បតិ៍ ១០ កើត ខែចេត្រ ឆ្នាំរោង
           ឆស័ក ពុទ្ធសករាជ ២៥៦៧ វេលាម៉ោង ០៥:០០ នាទីល្ងាច
           នៅគេហដ្ឋានខាងស្រីស្ថិតនៅភូមិព្រែកអំពិល
