@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        moulpali: ['Moulpali_400Regular', 'sans-serif'],
+        moulpali: ['Moulpali', 'sans-serif'],
       },
     },
   },
   plugins: [],
-}
+};
