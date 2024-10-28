@@ -38,7 +38,7 @@ const App = () => {
   const couple = data[0]; // Accessing the first element
 
   return (
-    <div>
+    <div className='md:px-48'>
 {/* navbar */}
 
 
@@ -53,10 +53,6 @@ const App = () => {
     <img src={ban2} alt="" />
     </div>
   </Carousel>
-
-
-
-
       <div className='led pt-4 pb-4'>
         <div className='text-center ml-4 mr-4'>
           <h1 className=' text-pink-500 khmer-regular'>សិរីសួស្តីមង្គលអាពាហ៍ពិពាហ៍</h1>
