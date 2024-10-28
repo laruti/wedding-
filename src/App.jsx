@@ -12,6 +12,8 @@ import ban3 from './assets/time.jpg'
 import pr1 from './assets/pr1.jpg'
 import pr2 from './assets/pr2.jpg'
 import pr4 from './assets/pr4.jpeg'
+import qr from './assets/qr_qrcode.png'
+
 
 
 
@@ -30,7 +32,7 @@ const App = () => {
       date: {
         day: "៥",
         month: "១",
-        year:"២០២៣",
+        year: "២០២៣",
       },
     },
   ];
@@ -39,20 +41,20 @@ const App = () => {
 
   return (
     <div className='md:px-48'>
-{/* navbar */}
+      {/* navbar */}
 
 
-<Carousel autoplay>
-    <div>
-      <img src={ban} alt="" />
-    </div>
-    <div>
-    <img src={ban3} alt="" />
-    </div>
-    <div>
-    <img src={ban2} alt="" />
-    </div>
-  </Carousel>
+      <Carousel autoplay>
+        <div>
+          <img src={ban} alt="" />
+        </div>
+        <div>
+          <img src={ban3} alt="" />
+        </div>
+        <div>
+          <img src={ban2} alt="" />
+        </div>
+      </Carousel>
       <div className='led pt-4 pb-4'>
         <div className='text-center ml-4 mr-4'>
           <h1 className=' text-pink-500 khmer-regular'>សិរីសួស្តីមង្គលអាពាហ៍ពិពាហ៍</h1>
@@ -67,20 +69,20 @@ const App = () => {
         <div className='flex flex-col items-center mt-8'>
           <div className='flex items-center gap-2'>
             <h1>{couple.nameM}</h1>
-            <img src={imgMM}  className='rounded-full w-[140px] h-[140px] ' alt="Female" />
+            <img src={imgMM} className='rounded-full w-[140px] h-[140px] ' alt="Female" />
           </div>
           <div>
             <img src={heart} alt="Heart" width={60} className='animate-bounce m-4' />
           </div>
           <div className='flex items-center gap-2 mt-4'>
-            <img src={imgFF}  className='rounded-full w-[140px] h-[140px]' alt="Female" />
+            <img src={imgFF} className='rounded-full w-[140px] h-[140px]' alt="Female" />
             <h1>{couple.nameF}</h1>
           </div>
         </div>
 
         <p className='text-center ml-4 mr-4 '>
           និង ពិសាភោជនាហារ ដែលនឹងប្រព្រឹត្ត ទៅនៅ<br />
-          ថ្ងៃទី<span>{couple.date.day}</span> ខែ{couple.date.month} ឆ្នាំ{couple.date.year} <br/>
+          ថ្ងៃទី<span>{couple.date.day}</span> ខែ{couple.date.month} ឆ្នាំ{couple.date.year} <br />
           ត្រូវនឹងថ្ងៃព្រហស្បតិ៍ ១០ កើត ខែចេត្រ ឆ្នាំរោង
           ឆស័ក ពុទ្ធសករាជ ២៥៦៧ វេលាម៉ោង ០៥:០០ នាទីល្ងាច
           នៅគេហដ្ឋានខាងស្រីស្ថិតនៅភូមិព្រែកអំពិល
@@ -95,19 +97,19 @@ const App = () => {
           <h1 className='text-pink-500'>កម្រងរូបភាពអនុស្សាវរីយ៍</h1>
           <p>រូបភាពសម្រាប់រំលឹក និងជាចំណងអាពាហ៍ពិពាហ៍ដ៏រឹងមាំ ហើយមានសុភមង្គល សម្រាប់យើងទាំងពីរនាក់។</p>
           <div class="grid grid-cols-3 gap-1  m-4">
-  
-    <div class="col-span-1  border rounded-xl "><img src={pr4} alt="" className='rounded-xl '/></div>
-    <div class="col-span-2 p-4 border rounded-xl"><img src={pr1} alt="" className='rounded-xl'/></div>
+
+            <div class="col-span-1  border rounded-xl "><img src={pr4} alt="" className='rounded-xl ' /></div>
+            <div class="col-span-2 p-4 border rounded-xl"><img src={pr1} alt="" className='rounded-xl' /></div>
 
 
-    <div class="col-span-1  border rounded-xl"><img src={pr2} alt="" className='rounded-xl'/></div>
-    <div class="col-span-1 border rounded-xl"><img src={pr1} alt="" className='rounded-xl'/></div>
-    <div class="col-span-1  border rounded-xl"><img src={pr2} alt="" className='rounded-xl'/></div>
+            <div class="col-span-1  border rounded-xl"><img src={pr2} alt="" className='rounded-xl' /></div>
+            <div class="col-span-1 border rounded-xl"><img src={pr1} alt="" className='rounded-xl' /></div>
+            <div class="col-span-1  border rounded-xl"><img src={pr2} alt="" className='rounded-xl' /></div>
 
- 
-    <div class="col-span-1  border rounded-xl"><img src={pr4} alt="" className='rounded-xl'/></div>
-    <div class="col-span-2  border rounded-xl"><img src={pr1} alt="" className='rounded-xl'/> </div> 
-</div>
+
+            <div class="col-span-1  border rounded-xl"><img src={pr4} alt="" className='rounded-xl' /></div>
+            <div class="col-span-2  border rounded-xl"><img src={pr1} alt="" className='rounded-xl' /> </div>
+          </div>
         </div>
       </div>
 
@@ -132,14 +134,20 @@ const App = () => {
       </div>
 
       <div className='flex flex-row gap-4 items-center border-2 m-4 rounded-md p-4'>
-        <div className='ml-2'><img src={qrcode} alt="" width={100} /></div>
+        <a href="https://pay.ababank.com/zeKRSJfFRv5T997p9">
+          <div className='ml-2'>
+            <img src={qr} alt="" width={100} />
+          </div>
+        </a>
         <div>
           <h1 className='text-pink-500'>HENG DOLLAR</h1>
           <div className='ml-8 font-bold'>978818522</div>
         </div>
       </div >
-
-
+      <div className='text-center text-gray-400 font-light border-t-2 border-gray-200'>
+        <div> © 2024-01-13. All Rights Reserved.</div>
+<div>Developed by dollar for: wedding invitation</div>
+      </div>
     </div>
   );
 };
