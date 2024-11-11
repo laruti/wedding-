@@ -13,6 +13,10 @@ import pr1 from './assets/pr1.jpg'
 import pr2 from './assets/pr2.jpg'
 import pr4 from './assets/pr4.jpeg'
 import qr from './assets/qr_qrcode.png'
+import pr5 from './assets/pr5.jpg'
+import pr6 from './assets/pr6.jpg'
+import pr7 from './assets/pr7.jpg'
+import {Image} from 'antd';
 
 
 
@@ -27,11 +31,11 @@ const App = () => {
   };
   const data = [
     {
-      nameM: "ឃុន គីមស្រ៊ុន",
-      nameF: "សួស សុខហេង",
+      nameM: "ហ៊ួយ តាំងស៊ាលី",
+      nameF: "ហេង ស្រីនេ",
       date: {
-        day: "៥",
-        month: "១",
+        day:"៥",
+        month: "មករា",
         year: "២០២៣",
       },
     },
@@ -85,11 +89,12 @@ const App = () => {
           ថ្ងៃទី<span>{couple.date.day}</span> ខែ{couple.date.month} ឆ្នាំ{couple.date.year} <br />
           ត្រូវនឹងថ្ងៃព្រហស្បតិ៍ ១០ កើត ខែចេត្រ ឆ្នាំរោង
           ឆស័ក ពុទ្ធសករាជ ២៥៦៧ វេលាម៉ោង ០៥:០០ នាទីល្ងាច
-          នៅគេហដ្ឋានខាងស្រីស្ថិតនៅភូមិព្រែកអំពិល
-          សង្កាត់ព្រែកអំពិល ក្រុងអរិយក្សត្រ ខេត្តកណ្ដាល
+          នៅគេហដ្ឋានខាងស្រីស្ថិតនៅភូមិអូរឬស្សី២
+          សង្កាត់អូរឬស្សី ក្រុងក្រចេះ ខេត្តក្រចេះ
           ដោយមេត្រីភាព។ សូមអរគុណ!
         </p>
       </div>
+      
 
       {/* Photos */}
       <div className='mt-4'>
@@ -97,22 +102,21 @@ const App = () => {
           <h1 className='text-pink-500'>កម្រងរូបភាពអនុស្សាវរីយ៍</h1>
           <p>រូបភាពសម្រាប់រំលឹក និងជាចំណងអាពាហ៍ពិពាហ៍ដ៏រឹងមាំ ហើយមានសុភមង្គល សម្រាប់យើងទាំងពីរនាក់។</p>
           <div class="grid grid-cols-3 gap-1  m-4">
+          <Image.PreviewGroup>
 
-            <div class="col-span-1  border rounded-xl "><img src={pr4} alt="" className='rounded-xl ' /></div>
-            <div class="col-span-2 p-4 border rounded-xl"><img src={pr1} alt="" className='rounded-xl' /></div>
+            <div class="col-span-1  border rounded-xl "><Image src={pr4} alt="" className='rounded-xl ' /></div>
+            <div class="col-span-2 p-4 border rounded-xl"><Image src={pr7} alt="" className='rounded-xl' /></div>
 
+            <div class="col-span-1  border rounded-xl"><Image src={pr2} alt="" className='rounded-xl' /></div>
+            <div class="col-span-1 border rounded-xl"><Image src={pr1} alt="" className='rounded-xl' /></div>
+            <div class="col-span-1  border rounded-xl"><Image src={pr6} alt="" className='rounded-xl' /></div>
 
-            <div class="col-span-1  border rounded-xl"><img src={pr2} alt="" className='rounded-xl' /></div>
-            <div class="col-span-1 border rounded-xl"><img src={pr1} alt="" className='rounded-xl' /></div>
-            <div class="col-span-1  border rounded-xl"><img src={pr2} alt="" className='rounded-xl' /></div>
-
-
-            <div class="col-span-1  border rounded-xl"><img src={pr4} alt="" className='rounded-xl' /></div>
-            <div class="col-span-2  border rounded-xl"><img src={pr1} alt="" className='rounded-xl' /> </div>
+            <div class="col-span-1  border rounded-xl"><Image src={pr5} alt="" className='rounded-xl' /></div>
+            <div class="col-span-2  border rounded-xl"><Image src={pr1} alt="" className='rounded-xl' /> </div>
+            </Image.PreviewGroup>
           </div>
         </div>
       </div>
-
       {/* Location */}
       <div>
         <h1>ទីតាំងកម្មវិធី</h1>
