@@ -70,13 +70,13 @@ const App = () => {
         <div className='flex flex-col items-center mt-8 '>
           <div className='flex items-center gap-2 '>
             <h1>{couple.nameM}</h1>
-            <img src={male} className='rounded-full w-[140px] h-[140px] object-cover ' alt="Female" />
+            <img src={male} className='rounded-[70px] w-[140px] h-[140px] object-cover p-2' alt="Female" />
           </div>
           <div>
             <img src={heart} alt="Heart" width={60} className='animate-bounce m-4' />
           </div>
           <div className='flex items-center gap-2 mt-4'>
-            <img src={famale} className='rounded-full w-[140px] h-[140px] object-cover  ' alt="Female" />
+            <img src={famale} className='rounded-full w-[140px] h-[140px] object-cover p-2 ' alt="Female" />
             <h1>{couple.nameF}</h1>
           </div>
         </div>
@@ -100,16 +100,15 @@ const App = () => {
           <p>រូបភាពសម្រាប់រំលឹក និងជាចំណងអាពាហ៍ពិពាហ៍ដ៏រឹងមាំ ហើយមានសុភមង្គល សម្រាប់យើងទាំងពីរនាក់។</p>
           <div class="grid grid-cols-3 gap-1  m-4">
             <Image.PreviewGroup>
+              <div class="col-span-1   rounded-xl "><Image src={pr4} alt="" className='rounded-xl ' /></div>
+              <div class="col-span-2  rounded-xl"><Image src={pr7} alt="" className='rounded-xl' /></div>
 
-              <div class="col-span-1  border rounded-xl "><Image src={pr4} alt="" className='rounded-xl ' /></div>
-              <div class="col-span-2 p-4 border rounded-xl"><Image src={pr7} alt="" className='rounded-xl' /></div>
+              <div class="col-span-1   rounded-xl"><Image src={pr2} alt="" className='rounded-xl' /></div>
+              <div class="col-span-1  rounded-xl"><Image src={pr1} alt="" className='rounded-xl' /></div>
+              <div class="col-span-1   rounded-xl"><Image src={pr6} alt="" className='rounded-xl' /></div>
 
-              <div class="col-span-1  border rounded-xl"><Image src={pr2} alt="" className='rounded-xl' /></div>
-              <div class="col-span-1 border rounded-xl"><Image src={pr1} alt="" className='rounded-xl' /></div>
-              <div class="col-span-1  border rounded-xl"><Image src={pr6} alt="" className='rounded-xl' /></div>
-
-              <div class="col-span-1  border rounded-xl"><Image src={pr5} alt="" className='rounded-xl' /></div>
-              <div class="col-span-2  border rounded-xl"><Image src={pr1} alt="" className='rounded-xl' /> </div>
+              <div class="col-span-1  rounded-xl"><Image src={pr5} alt="" className='rounded-xl' /></div>
+              <div class="col-span-2   rounded-xl"><Image src={pr1} alt="" className='rounded-xl' /> </div>
             </Image.PreviewGroup>
           </div>
         </div>
