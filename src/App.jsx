@@ -17,6 +17,8 @@ import pr5 from './assets/pr5.jpg'
 import pr6 from './assets/pr6.jpg'
 import pr7 from './assets/pr7.jpg'
 import {Image} from 'antd';
+import famale from './assets/famale2.jpg'
+import male from './assets/male.jpg'
 
 
 
@@ -52,9 +54,7 @@ const App = () => {
         <div>
           <img src={ban} alt="" />
         </div>
-        <div>
-          <img src={ban3} alt="" />
-        </div>
+        
         <div>
           <img src={ban2} alt="" />
         </div>
@@ -73,13 +73,13 @@ const App = () => {
         <div className='flex flex-col items-center mt-8'>
           <div className='flex items-center gap-2'>
             <h1>{couple.nameM}</h1>
-            <img src={imgMM} className='rounded-full w-[140px] h-[140px] ' alt="Female" />
+            <img src={male} className='rounded-full w-[140px] h-[140px] object-cover ' alt="Female" />
           </div>
           <div>
             <img src={heart} alt="Heart" width={60} className='animate-bounce m-4' />
           </div>
           <div className='flex items-center gap-2 mt-4'>
-            <img src={imgFF} className='rounded-full w-[140px] h-[140px]' alt="Female" />
+            <img src={famale} className='rounded-full w-[140px] h-[140px] object-cover  ' alt="Female" />
             <h1>{couple.nameF}</h1>
           </div>
         </div>
@@ -148,8 +148,8 @@ const App = () => {
           <div className='ml-8 font-bold'>978818522</div>
         </div>
       </div >
-      <div className='text-center text-gray-400 font-light border-t-2 border-gray-200'>
-        <div> © 2024-01-13. All Rights Reserved.</div>
+      <div className='text-center text-gray-400 font-light border-t-2 border-gray-200 mt-4'>
+        <div > © 2024-01-13. All Rights Reserved.</div>
 <div>Developed by dollar for: wedding invitation</div>
       </div>
     </div>
