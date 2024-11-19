@@ -2,9 +2,6 @@ import React from 'react';
 import './App.css';
 import img from './assets/ktemjrouk.jpg';
 import heart from './assets/heart.png';
-import qrcode from './assets/qr.jpg'
-import imgFF from './assets/imgcrop.jpg';
-import imgMM from './assets/imgmen.jpg'
 import { Carousel } from 'antd';
 import ban from './assets/banner.png'
 import ban2 from './assets/ban2.jpg'
@@ -16,7 +13,7 @@ import qr from './assets/qr_qrcode.png'
 import pr5 from './assets/pr5.jpg'
 import pr6 from './assets/pr6.jpg'
 import pr7 from './assets/pr7.jpg'
-import {Image} from 'antd';
+import { Image } from 'antd';
 import famale from './assets/famale2.jpg'
 import male from './assets/male.jpg'
 
@@ -36,9 +33,9 @@ const App = () => {
       nameM: "ហ៊ួយ តាំងស៊ាលី",
       nameF: "ហេង ស្រីនេ",
       date: {
-        day:"៥",
+        day: "៥",
         month: "មករា",
-        year: "២០២៣",
+        year: "២០២៥",
       },
     },
   ];
@@ -54,7 +51,7 @@ const App = () => {
         <div>
           <img src={ban} alt="" />
         </div>
-        
+
         <div>
           <img src={ban2} alt="" />
         </div>
@@ -70,8 +67,8 @@ const App = () => {
           </p>
         </div>
 
-        <div className='flex flex-col items-center mt-8'>
-          <div className='flex items-center gap-2'>
+        <div className='flex flex-col items-center mt-8 '>
+          <div className='flex items-center gap-2 '>
             <h1>{couple.nameM}</h1>
             <img src={male} className='rounded-full w-[140px] h-[140px] object-cover ' alt="Female" />
           </div>
@@ -94,7 +91,7 @@ const App = () => {
           ដោយមេត្រីភាព។ សូមអរគុណ!
         </p>
       </div>
-      
+
 
       {/* Photos */}
       <div className='mt-4'>
@@ -102,17 +99,17 @@ const App = () => {
           <h1 className='text-pink-500'>កម្រងរូបភាពអនុស្សាវរីយ៍</h1>
           <p>រូបភាពសម្រាប់រំលឹក និងជាចំណងអាពាហ៍ពិពាហ៍ដ៏រឹងមាំ ហើយមានសុភមង្គល សម្រាប់យើងទាំងពីរនាក់។</p>
           <div class="grid grid-cols-3 gap-1  m-4">
-          <Image.PreviewGroup>
+            <Image.PreviewGroup>
 
-            <div class="col-span-1  border rounded-xl "><Image src={pr4} alt="" className='rounded-xl ' /></div>
-            <div class="col-span-2 p-4 border rounded-xl"><Image src={pr7} alt="" className='rounded-xl' /></div>
+              <div class="col-span-1  border rounded-xl "><Image src={pr4} alt="" className='rounded-xl ' /></div>
+              <div class="col-span-2 p-4 border rounded-xl"><Image src={pr7} alt="" className='rounded-xl' /></div>
 
-            <div class="col-span-1  border rounded-xl"><Image src={pr2} alt="" className='rounded-xl' /></div>
-            <div class="col-span-1 border rounded-xl"><Image src={pr1} alt="" className='rounded-xl' /></div>
-            <div class="col-span-1  border rounded-xl"><Image src={pr6} alt="" className='rounded-xl' /></div>
+              <div class="col-span-1  border rounded-xl"><Image src={pr2} alt="" className='rounded-xl' /></div>
+              <div class="col-span-1 border rounded-xl"><Image src={pr1} alt="" className='rounded-xl' /></div>
+              <div class="col-span-1  border rounded-xl"><Image src={pr6} alt="" className='rounded-xl' /></div>
 
-            <div class="col-span-1  border rounded-xl"><Image src={pr5} alt="" className='rounded-xl' /></div>
-            <div class="col-span-2  border rounded-xl"><Image src={pr1} alt="" className='rounded-xl' /> </div>
+              <div class="col-span-1  border rounded-xl"><Image src={pr5} alt="" className='rounded-xl' /></div>
+              <div class="col-span-2  border rounded-xl"><Image src={pr1} alt="" className='rounded-xl' /> </div>
             </Image.PreviewGroup>
           </div>
         </div>
@@ -150,7 +147,7 @@ const App = () => {
       </div >
       <div className='text-center text-gray-400 font-light border-t-2 border-gray-200 mt-4'>
         <div > © 2024-01-13. All Rights Reserved.</div>
-<div>Developed by dollar for: wedding invitation</div>
+        <div>Developed by dollar for: wedding invitation</div>
       </div>
     </div>
   );
