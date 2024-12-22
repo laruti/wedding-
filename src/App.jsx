@@ -9,7 +9,7 @@ import ban3 from './assets/time.jpg'
 import pr1 from './assets/pr1.jpg'
 import pr2 from './assets/pr2.jpg'
 import pr4 from './assets/pr4.jpeg'
-import qr from './assets/qr_qrcode.png'
+import qr from './assets/qr_j.png'
 import pr5 from './assets/pr5.jpg'
 import pr6 from './assets/pr6.jpg'
 import pr7 from './assets/pr7.jpg'
@@ -84,8 +84,8 @@ const App = () => {
         <p className='text-center ml-4 mr-4 '>
           និង ពិសាភោជនាហារ ដែលនឹងប្រព្រឹត្ត ទៅនៅ<br />
           ថ្ងៃទី<span>{couple.date.day}</span> ខែ{couple.date.month} ឆ្នាំ{couple.date.year} <br />
-          ត្រូវនឹងថ្ងៃព្រហស្បតិ៍ ១០ កើត ខែចេត្រ ឆ្នាំរោង
-          ឆស័ក ពុទ្ធសករាជ ២៥៦៧ វេលាម៉ោង ០៥:០០ នាទីល្ងាច
+          ត្រូវនឹងថ្ងៃព្រហស្បតិ៍ ០៧ កើត ខែ បុស្ស ឆ្នាំរោង
+          ឆស័ក ពុទ្ធសករាជ ២៥៦៨ វេលាម៉ោង ០៥:០០ នាទីល្ងាច
           នៅគេហដ្ឋានខាងស្រីស្ថិតនៅភូមិអូរឬស្សី២
           សង្កាត់អូរឬស្សី ក្រុងក្រចេះ ខេត្តក្រចេះ
           ដោយមេត្រីភាព។ សូមអរគុណ!
@@ -134,18 +134,18 @@ const App = () => {
       </div>
 
       <div className='flex flex-row gap-4 items-center border-2 m-4 rounded-md p-4'>
-        <a href="https://pay.ababank.com/zeKRSJfFRv5T997p9">
+       
           <div className='ml-2'>
-            <img src={qr} alt="" width={100} />
+            <img src={qr} alt="" width={100} className=' obje'/>
           </div>
-        </a>
+      
         <div>
-          <h1 className='text-pink-500'>HENG DOLLAR</h1>
-          <div className='ml-8 font-bold'>978818522</div>
+          <h1 className='text-pink-500'>HENG SREYNE</h1>
+          <div className='ml-8 font-bold'>068685656</div>
         </div>
       </div >
       <div className='text-center text-gray-400 font-light border-t-2 border-gray-200 mt-4'>
-        <div > © 2024-01-13. All Rights Reserved.</div>
+        <div > © 2024-12-24. All Rights Reserved.</div>
         <div>Developed by dollar for: wedding invitation</div>
       </div>
     </div>
